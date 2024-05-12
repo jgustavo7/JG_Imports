@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f1f0f0;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#sobre-a-loja p {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+header {
+    background-color: rgb(10, 10, 179);
+    padding-top: 16px;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 450px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 24px;
+}
+
+#produtos img {
+    display: block;
+    height: 225px;
+    width: 225px;
+    margin-right: 28px;
+}
+
+#produtos p {
+    font-size: 14px;
+}
+
+#produtos h3 {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.camisas-time { 
+    flex-wrap: wrap
+}
+
+.camisas-time li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 16px;
+}
+
+.camisas-time li img {
+    max-width: 100%;
+}
+
+.camisas-time li h3 {
+    margin: 12px 0;
+    margin-right: 14px;
+}
+
+button {
+    display: block;
+    width: 80%;
+    padding: 4px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    font-size: 15px;
+    margin: 10px 0;
+    display: block;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container-flex {
+        display: block;
+    }    
+
+    header {
+        display: flex;
+    } 
+
+    #sobre-a-loja p {
+        font-size: 18px;
+    }
+
+
+    #sobre-a-loja img {
+        display: flex;
+        justify-content: center;
+        margin-left: 18px;
+        margin-bottom: 16px;
+    }
+    
+    .sobre {
+        display: flex;
+        margin-right: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #produtos ul {
+        display: flex;
+        margin: 16px;
+    }
+
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        display: flex;
+    }
+
+    #sobre-a-loja h2 {
+        display: flex;
+        margin-bottom: 24px;
+    }
+    
+    .sobre {
+    display: none;
+    }
+
+    #sobre-a-loja p {
+        display: flex;
+        font-size: 24px;
+    }
+
+    #sobre-a-loja img {
+        display: flex;
+        width: 250px;
+        height: 400px;
+        margin-left: 35px;
+    }
+
+}
